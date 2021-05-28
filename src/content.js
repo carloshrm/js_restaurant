@@ -9,7 +9,7 @@ homePage.innerHTML = `
 Big red ones, green ones, small yellow-tinged ones, you name it. None of that orange stuff, they're literally uncomparable, figuratively speaking. <br/><br/>
 </h3> <h2>Anyway, come over to our imaginary place for apple heaven!</h2>
 <br/>
-<h2><i>Everywhere!</i></h2>
+<h2><i>Apples Everywhere!</i></h2>
 </div>
 `;
 
