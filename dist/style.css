@@ -15,7 +15,7 @@ body {
   background-image: url(/js_restaurant/img/background.jpg);
   background-size: cover;
   background-position: center;
-  backdrop-filter: blur(2px) brightness(80%);
+  backdrop-filter: blur(4px);
 }
 #content {
   display: flex;
@@ -25,7 +25,6 @@ body {
   background-color: var(--brightBG);
   margin: auto;
 }
-
 #header {
   display: flex;
   position: sticky;
@@ -34,6 +33,16 @@ body {
   background-color: var(--darkBG);
   min-height: 4rem;
   box-shadow: 0px 2px 2px black;
+}
+#home_cont,
+#info_cont,
+#types_cont {
+  display: flex;
+  max-width: 70%;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 1rem;
+  overflow: hidden;
 }
 .header {
   display: grid;
@@ -53,18 +62,6 @@ th {
 td {
   padding: 0.3rem;
 }
-
-#home_cont,
-#info_cont,
-#types_cont {
-  display: flex;
-  max-width: 70%;
-  margin: 2rem auto;
-  background-color: white;
-  padding: 1rem;
-  overflow: hidden;
-}
-
 .header p {
   font-size: 1.3rem;
   font-weight: bold;
@@ -87,7 +84,6 @@ img {
   margin: 1rem 0;
   max-width: 25rem;
 }
-
 #footer {
   position: absolute;
   bottom: 0;
@@ -104,7 +100,6 @@ p {
   font-size: 2rem;
   align-self: center;
 }
-
 h1 {
   font-size: 2rem;
 }
@@ -114,7 +109,6 @@ h2 {
 h3 {
   font-size: 1rem;
 }
-
 #header_title {
   margin: 0 0.6rem 0 1rem;
   color: white;

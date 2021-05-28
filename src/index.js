@@ -1,22 +1,9 @@
-import * as contentModule from "./content.js";
+import * as contentModule from "./content";
+import dom from "./dom";
 
-const dom = {
-  container: document.getElementById("content"),
-  getDiv: (id, cl = undefined) => {
-    const div = document.createElement("div");
-    div.id = id;
-    if (cl != undefined) div.classList.add(cl);
-    return div;
-  },
-  getText: (content, id = undefined) => {
-    const p = document.createElement("p");
-    p.innerText = content;
-    if (id != undefined) p.id = id;
-    return p;
-  },
-};
 const bodyElements = ["header", "main", "footer"];
 const tabs = ["home", "types", "info"];
+let lastClick = "";
 
 bodyElements.forEach((e) => {
   const largerParent = dom.getDiv(e);
@@ -38,7 +25,6 @@ bodyElements.forEach((e) => {
   }
 });
 
-let lastClick = "";
 function swapContent(e) {
   let clickTarget = this.id;
   const contentMatch = {
@@ -54,4 +40,7 @@ function swapContent(e) {
     this.classList.toggle("header_selected");
   }
 }
-dom.main.appendChild(contentModule.homePage);
+(() => {
+  dom.main.appendChild(contentModule.homePage);
+  document.getElementById("home").click();
+})();
