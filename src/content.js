@@ -1,7 +1,7 @@
 const homePage = document.createElement("div");
 homePage.id = "home_cont";
 homePage.innerHTML = `
-<img src="/js_restaurant/img/apple0.jpg">
+<img src="./img/apple0.jpg">
 <div id="intro_cont">
 <h1> Imagine a restaurant... </h1>
 <br/>
@@ -24,13 +24,13 @@ typeContent.innerHTML = `
 <h3>Althought most are, not all of them are for eating raw, some are too acidic and are used for making ciders or for cooking. </h3> <br/>
 <h3>Some wild varieties called crabapples can't be consumed at all, but are still kept for a variety of reasons, such as great looking trees full of flowers, and for harvesting wood used in smoked goods.</h3>
 </div>
-<img src="/js_restaurant/img/apple3.jpg">
+<img src="./img/apple3.jpg">
 `;
 
 const infoContent = document.createElement("div");
 infoContent.id = "info_cont";
 infoContent.innerHTML = `
-<img src="/js_restaurant/img/apple1.jpg">
+<img src="./img/apple1.jpg">
 <div id="info_">
 <h1>Nutritional Info</h1>
 
