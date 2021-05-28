@@ -12,7 +12,7 @@ body {
   width: 100vw;
   height: 100vh;
   color: black;
-  background-image: url(/js_restaurant/img/background.jpg);
+  background-image: url(background.jpg);
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(4px);

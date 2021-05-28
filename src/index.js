@@ -1,5 +1,11 @@
 import * as contentModule from "./content";
 import dom from "./dom";
+import "./style.css";
+import "./background.jpg";
+import "./apple0.jpg";
+import "./apple1.jpg";
+import "./apple2.jpg";
+import "./apple3.jpg";
 
 const bodyElements = ["header", "main", "footer"];
 const tabs = ["home", "types", "info"];
